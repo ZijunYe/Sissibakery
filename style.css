@@ -1,0 +1,162 @@
+html{
+    Font-size:62.5%; 
+    box-sizing: border-box; 
+}
+
+body{
+    font:1.6rem serif; 
+    height:100vh; 
+    margin: 0; 
+}
+.grid-container{
+    display: grid; 
+    grid-template-areas:
+    "header"
+    "main"
+    "footer" ;
+    height:100%;
+    grid-template-columns: 2fr;
+    grid-template-rows: 10rem 2fr 10rem;
+    
+
+
+}
+.header{
+    grid-area: header; 
+    background-color: #ff6699; 
+    color:#ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly ; 
+    text-align: center;
+  
+
+}
+
+.brand a{
+    color:#ffffff;
+    font-size: 5rem; 
+    font-weight: bold;
+    text-decoration:none; 
+    padding:0.5rem;
+    
+}
+
+.header-links a{
+    color:#ffffff;
+    font-size:2rem; 
+    text-decoration:none;
+
+}
+
+.header-links a:hover{
+    color:#99003d; 
+}
+.main{
+    grid-area:main;
+}
+.footer{
+    grid-area:footer; 
+    background-color: #ff99c2;
+    color: #ffffff; 
+    display: flex; 
+    justify-content: center; 
+}
+
+a{
+     text-decoration: none;
+}
+a:hover {
+    color:#cc0066;
+}
+
+/*home screen*/ 
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+.products li {
+    list-style-type: none;
+    padding: 0;
+    flex: 0 1 34rem;
+    margin: 0rem;
+    height: 30rem;
+    border-bottom: .1rem #c0c0c0 solid;
+  }
+
+.product{
+    display:flex; 
+    flex-direction:column;
+    justify-content: space-between;
+    height:100%; 
+  
+}
+.product-image{
+    max-width: 20rem;
+    max-height: 20rem;
+  }
+a{
+    text-decoration: none;
+}
+a:hover {
+   color:#cc0066;
+}
+
+
+.product-name a{
+    text-decoration: none;
+    color:#800040;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.product-flavor{
+    font-size:1.2rem; 
+}
+.price {
+    color:#8d305f;
+    font-size: 2.5rem; 
+    font-weight:bold;
+}
+.rating {
+    margin-bottom:1rem; 
+}
+.brand button{
+    font-size:3rem;
+    padding:.5rem;
+    background:none; 
+    border:none; 
+    color:#ffffff; 
+    cursor:pointer; 
+
+}
+.sidebar{
+   position:fixed; 
+   transform: translateX(-30rem);
+   width:30rem;
+   background-color: #ffe6f2;
+   height:100%; 
+}
+
+.sidebar.open{ 
+    transform:translateX(0);
+
+}
+
+.sidebar-close-button {
+    border-radius:50%; 
+    border:.1rem #c45f92 solid; 
+    width:3rem; 
+    height:3rem;
+    padding:0.5rem;
+    font-size:2.5rem; 
+    padding-top:0; 
+    cursor:pointer; 
+    position:absolute; 
+    right:0.5rem;
+    top:1.5rem; 
+
+}
